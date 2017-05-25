@@ -55,6 +55,7 @@
   <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/external/libnl" />
   <remove-project name="platform/external/sonivox" />
+  <remove-project name="platform/external/v8" />
   <remove-project name="platform/frameworks/ex" />
   <remove-project name="platform/packages/apps/CertInstaller" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
@@ -68,6 +69,7 @@
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="android-security" />
   <project path="external/libnl" name="android_external_libnl" remote="android-security" groups="pdk" />
   <project path="external/sonivox" name="android_external_sonivox" remote="android-security" groups="pdk" />
+  <project path="external/v8" name="android_external_v8" remote="android-security" groups="pdk" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="android-security" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="android-security" />
