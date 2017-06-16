@@ -23,9 +23,11 @@
   <remove-project name="SlimRoms/frameworks_base" />
   <remove-project name="SlimRoms/frameworks_opt_net_wifi" />
   <remove-project name="SlimRoms/frameworks_native" />
+  <remove-project name="SlimRoms/packages_apps_Bluetooth" />
   <remove-project name="SlimRoms/packages_apps_Messaging" />
   <remove-project name="SlimRoms/packages_services_Telephony" />
   <remove-project name="SlimRoms/android_system_bt" />
+  <remove-project name="SlimRoms/android_system_core" />
   <remove-project name="SlimRoms/vendor_slim" />
   <remove-project name="SlimRoms/platform_manifest" />
 
@@ -40,9 +42,11 @@
   <project path="frameworks/base" name="frameworks_base" remote="slimromssecurity" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="slimromssecurity" />
   <project path="frameworks/native" name="frameworks_native" remote="slimromssecurity" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="slimromssecurity" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slimromssecurity" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="slimromssecurity" />
   <project path="system/bt" name="android_system_bt" remote="slimromssecurity" />
+  <project path="system/core" name="system_core" remote="slimromssecurity" />
   <project path="vendor/slim" name="vendor_slim" remote="slimromssecurity" />
   <project path="platform_manifest" name="platform_manifest" remote="slimromssecurity" />
 
@@ -54,6 +58,9 @@
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/external/libnl" />
+  <remove-project name="platform/external/libvpx" />
+  <remove-project name="platform/external/libxml2" />
+  <remove-project name="platform/external/pdfium" />
   <remove-project name="platform/external/sonivox" />
   <remove-project name="platform/external/v8" />
   <remove-project name="platform/frameworks/ex" />
@@ -68,6 +75,9 @@
   <project path="external/libhevc" name="android_external_libhevc" remote="android-security" groups="pdk-fs" />
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="android-security" />
   <project path="external/libnl" name="android_external_libnl" remote="android-security" groups="pdk" />
+  <project path="external/libvpx" name="android_external_libvpx" remote="android-security" groups="pdk" />
+  <project path="external/libxml2" name="android_external_libxml2" remote="android-security" groups="pdk-cw-fs,pdk-fs,libxml2" />
+  <project path="external/pdfium" name="android_external_pdfium" remote="android-security" groups="pdk" />
   <project path="external/sonivox" name="android_external_sonivox" remote="android-security" groups="pdk" />
   <project path="external/v8" name="android_external_v8" remote="android-security" groups="pdk" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
