@@ -13,7 +13,13 @@
   <remote  name="android-security"
            fetch="https://github.com/android-security/"
            revision="aosp-6.0" />
- 
+
+  <!-- Remove AOSP Repos we needed to patch -->
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+
+  <!-- Patched AOSP Repos -->
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="android-security" />
+
   <!-- Remove SlimRoms Repos we like to patch -->
   <remove-project name="SlimRoms/bootable_recovery" />
   <remove-project name="SlimRoms/android_bionic" />
