@@ -15,9 +15,15 @@
            revision="aosp-6.0" />
 
   <!-- Remove AOSP Repos we needed to patch -->
+  <remove-project name="platform/external/libavc" />
+  <remove-project name="platform/external/libhevc" />
+  <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
 
   <!-- Patched AOSP Repos -->
+  <project path="external/libavc" name="android_external_libavc" remote="android-security" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="android-security" />
+  <project path="external/libmpeg2" name="android_external_libmpeg2" remote="android-security" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="android-security" />
 
   <!-- Remove SlimRoms Repos we like to patch -->
