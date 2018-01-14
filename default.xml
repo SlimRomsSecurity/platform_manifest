@@ -66,6 +66,9 @@
   <remove-project name="SlimRoms/vendor_slim" />
   <remove-project name="SlimRoms/platform_manifest" />
 
+  <!-- Debloat -->
+  <remove-project name="SlimRoms/packages_apps_Browser" />
+
   <!-- Patched SlimRoms Repos -->
   <project path="build" name="android_build" remote="slimromssecurity" >
     <copyfile src="core/root.mk" dest="Makefile" />
