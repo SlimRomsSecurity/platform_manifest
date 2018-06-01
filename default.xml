@@ -60,6 +60,7 @@
   <remove-project name="SlimRoms/packages_apps_Messaging" />
   <remove-project name="SlimRoms/packages_apps_Nfc" />
   <remove-project name="SlimRoms/packages_apps_Settings" />
+  <remove-project name="SlimRoms/packages_apps_Snap" />
   <remove-project name="SlimRoms/packages_apps_UnifiedEmail" />
   <remove-project name="SlimRoms/packages_providers_DownloadProvider" />
   <remove-project name="SlimRoms/packages_providers_MediaProvider" />
@@ -124,6 +125,7 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slimromssecurity" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="slimromssecurity" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="slimromssecurity" />
+  <project path="packages/apps/Snap" name="packages_apps_Snap" remote="slimromssecurity" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="slimromssecurity" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="slimromssecurity" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="slimromssecurity" />
