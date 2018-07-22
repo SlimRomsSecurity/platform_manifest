@@ -14,7 +14,7 @@
            revision="aosp-7.1" />
 
   <!-- Remove AOSP Repos we needed to patch -->
-  <remove-project name="platform/device/common" />
+  <remove-project name="device/common" />
   <remove-project name="platform/external/bouncycastle" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/packages/apps/Email" />
