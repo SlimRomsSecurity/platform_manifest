@@ -46,6 +46,7 @@
   <remove-project name="SlimRoms/bootable_recovery" />
   <remove-project name="SlimRoms/android_bionic" />
   <remove-project name="SlimRoms/android_build" />
+  <remove-project name="SlimRoms/android_external_e2fsprogs" />
   <remove-project name="SlimRoms/android_external_libnfc-nci" />
   <remove-project name="SlimRoms/android_external_sepolicy" />
   <remove-project name="SlimRoms/android_external_skia" />
@@ -74,6 +75,7 @@
   <remove-project name="SlimRoms/android_system_bt" />
   <remove-project name="SlimRoms/android_system_core" />
   <remove-project name="SlimRoms/android_system_media" />
+  <remove-project name="SlimRoms/android_system_vold" />
   <remove-project name="SlimRoms/vendor_slim" />
   <remove-project name="SlimRoms/platform_manifest" />
 
@@ -86,6 +88,7 @@
   </project>
   <project path="bionic" name="android_bionic" remote="slimromssecurity" />
   <project path="bootable/recovery" name="bootable_recovery" remote="slimromssecurity" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="slimromssecurity" />
   <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="slimromssecurity" />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="slimromssecurity" />
   <project path="external/skia" name="android_external_skia" remote="slimromssecurity" />
@@ -141,6 +144,7 @@
   <project path="system/bt" name="android_system_bt" remote="slimromssecurity" />
   <project path="system/core" name="system_core" remote="slimromssecurity" />
   <project path="system/media" name="system_media" remote="slimromssecurity" />
+  <project path="system/vold" name="android_system_vold" remote="slimromssecurity" />
   <project path="vendor/slim" name="vendor_slim" remote="slimromssecurity" />
   <project path="platform_manifest" name="platform_manifest" remote="slimromssecurity" />
 
