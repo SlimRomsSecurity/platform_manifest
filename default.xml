@@ -17,6 +17,7 @@
   <remove-project name="device/common" />
   <remove-project name="platform/external/bouncycastle" />
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/curl" />
   <remove-project name="platform/packages/apps/Email" />
   <remove-project name="platform/packages/providers/UserDictionaryProvider" />
 
@@ -24,12 +25,14 @@
   <project path="device/common" name="android_device_common" remote="android-security" groups="pdk-cw-fs,pdk" />
   <project path="external/bouncycastle" name="android_external_bouncycastle" remote="android-security" groups="pdk" />
   <project path="external/chromium-webview" name="android_external_chromium-webview" remote="android-security" groups="pdk" />
+  <project path="external/curl" name="android_external_curl" remote="android-security" groups="pdk" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="android-security" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
 
   <!-- Remove SlimRoms Repos we like to patch -->
   <remove-project name="SlimRoms/android_build" />
   <remove-project name="SlimRoms/android_external_aac" />
+  <remove-project name="SlimRoms/android_external_e2fsprogs" />
   <remove-project name="SlimRoms/android_external_libavc" />
   <remove-project name="SlimRoms/android_external_libhevc" />
   <remove-project name="SlimRoms/android_external_libmpeg2" />
@@ -39,12 +42,16 @@
   <remove-project name="SlimRoms/frameworks_native" />
   <remove-project name="SlimRoms/frameworks_opt_telephony" />
   <remove-project name="SlimRoms/packages_apps_Bluetooth" />
+  <remove-project name="SlimRoms/packages_apps_Messaging" />
+  <remove-project name="SlimRoms/packages_apps_PackageInstaller" />
+  <remove-project name="SlimRoms/packages_apps_Settings" />
   <remove-project name="SlimRoms/packages_apps_UnifiedEmail" />
   <remove-project name="SlimRoms/packages_providers_MediaProvider" />
   <remove-project name="SlimRoms/packages_services_Telephony" />
   <remove-project name="SlimRoms/android_system_bt" />
   <remove-project name="SlimRoms/android_system_core" />
   <remove-project name="SlimRoms/android_system_media" />
+  <remove-project name="SlimRoms/android_system_vold" />
   <remove-project name="SlimRoms/vendor_slim" />
   <remove-project name="SlimRoms/platform_manifest" />
 
@@ -53,6 +60,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="external/aac" name="android_external_aac" remote="slimromssecurity" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="slimromssecurity" />
   <project path="external/libavc" name="android_external_libavc" remote="slimromssecurity" />
   <project path="external/libhevc" name="android_external_libhevc" remote="slimromssecurity" />
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="slimromssecurity" />
@@ -62,12 +70,16 @@
   <project path="frameworks/native" name="frameworks_native" remote="slimromssecurity" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="slimromssecurity" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="slimromssecurity" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slimromssecurity" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="slimromssecurity" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="slimromssecurity" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="slimromssecurity" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="slimromssecurity" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="slimromssecurity" />
   <project path="system/bt" name="android_system_bt" remote="slimromssecurity" />
   <project path="system/core" name="system_core" remote="slimromssecurity" />
   <project path="system/media" name="system_media" remote="slimromssecurity" />
+  <project path="system/vold" name="android_system_vold" remote="slimromssecurity" />
   <project path="vendor/slim" name="vendor_slim" remote="slimromssecurity" />
   <project path="platform_manifest" name="platform_manifest" remote="slimromssecurity" />
 
