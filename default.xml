@@ -30,6 +30,7 @@
   <remove-project name="platform/external/v8" />
   <remove-project name="platform/frameworks/ex" />
   <remove-project name="platform/frameworks/minikin" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
   <remove-project name="platform/packages/providers/UserDictionaryProvider" />
 
@@ -49,6 +50,7 @@
   <project path="external/v8" name="android_external_v8" remote="android-security" groups="pdk" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/minikin" name="android_frameworks_minikin" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="android-security" groups="pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="android-security" />
   <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
   
@@ -72,6 +74,7 @@
   <remove-project name="SlimRoms/hardware_ril" />
   <remove-project name="SlimRoms/android_libcore" />
   <remove-project name="SlimRoms/packages_apps_Bluetooth" />
+  <remove-project name="SlimRoms/packages_apps_Contacts" />
   <remove-project name="SlimRoms/packages_apps_Email" />
   <remove-project name="SlimRoms/packages_apps_Gallery2" />
   <remove-project name="SlimRoms/packages_apps_Messaging" />
@@ -141,6 +144,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="slimromssecurity" />
   <project path="libcore" name="android_libcore" remote="slimromssecurity" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="slimromssecurity" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="slimromssecurity" />
   <project path="packages/apps/Email" name="packages_apps_Email" remote="slimromssecurity" />
   <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="slimromssecurity" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slimromssecurity" />
