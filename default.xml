@@ -42,9 +42,11 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="android-security" groups="pdk" />
 
   <!-- Remove SlimRoms Repos we like to patch -->
+  <remove-project name="SlimRoms/android_bionic" />
   <remove-project name="SlimRoms/android_build" />
   <remove-project name="SlimRoms/android_external_aac" />
   <remove-project name="SlimRoms/android_external_e2fsprogs" />
+  <remove-project name="SlimRoms/android_external_icu" />
   <remove-project name="SlimRoms/android_external_libavc" />
   <remove-project name="SlimRoms/android_external_libhevc" />
   <remove-project name="SlimRoms/android_external_libmpeg2" />
@@ -72,6 +74,7 @@
   <remove-project name="SlimRoms/android_system_bt" />
   <remove-project name="SlimRoms/android_system_core" />
   <remove-project name="SlimRoms/android_system_media" />
+  <remove-project name="SlimRoms/android_system_netd" />
   <remove-project name="SlimRoms/android_system_vold" />
   <remove-project name="SlimRoms/vendor_slim" />
   <remove-project name="SlimRoms/platform_manifest" />
@@ -80,8 +83,10 @@
   <project path="build" name="android_build" remote="slimromssecurity" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="android_bionic" remote="slimromssecurity" />
   <project path="external/aac" name="android_external_aac" remote="slimromssecurity" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="slimromssecurity" />
+  <project path="external/icu" name="android_external_icu" remote="slimromssecurity" />
   <project path="external/libavc" name="android_external_libavc" remote="slimromssecurity" />
   <project path="external/libhevc" name="android_external_libhevc" remote="slimromssecurity" />
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="slimromssecurity" />
@@ -109,6 +114,7 @@
   <project path="system/bt" name="android_system_bt" remote="slimromssecurity" />
   <project path="system/core" name="system_core" remote="slimromssecurity" />
   <project path="system/media" name="system_media" remote="slimromssecurity" />
+  <project path="system/netd" name="android_system_netd" remote="slimromssecurity" />
   <project path="system/vold" name="android_system_vold" remote="slimromssecurity" />
   <project path="vendor/slim" name="vendor_slim" remote="slimromssecurity" />
   <project path="platform_manifest" name="platform_manifest" remote="slimromssecurity" />
