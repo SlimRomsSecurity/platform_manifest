@@ -19,14 +19,20 @@
   <remove-project name="platform/external/chromium-libpac" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/curl" />
+  <remove-project name="platform/external/ImageMagick" />
+  <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/neven" />
   <remove-project name="platform/external/sfntly" />
   <remove-project name="platform/external/v8" />
+  <remove-project name="platform/packages/apps/CertInstaller" />
   <remove-project name="platform/packages/apps/Email" />
   <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <remove-project name="platform/packages/providers/TvProvider" />
   <remove-project name="platform/packages/providers/UserDictionaryProvider" />
+  <remove-project name="platform/system/gatekeeper" />
   <remove-project name="platform/system/update_engine" />
 
   <!-- Patched AOSP Repos -->
@@ -35,17 +41,24 @@
   <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="android-security" groups="pdk-fs" />
   <project path="external/chromium-webview" name="android_external_chromium-webview" remote="android-security" groups="pdk" />
   <project path="external/curl" name="android_external_curl" remote="android-security" groups="pdk" />
+  <project path="external/ImageMagick" name="android_external_ImageMagick" remote="android-security" groups="pdk" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="android-security" groups="pdk" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="android-security" groups="pdk" />
   <project path="external/libpng" name="android_external_libpng" remote="android-security" groups="pdk" />
   <project path="external/libxml2" name="android_external_libxml2" remote="android-security" groups="pdk,libxml2" />
   <project path="external/neven" name="android_external_neven" remote="android-security" groups="pdk" />
   <project path="external/sfntly" name="android_external_sfntly" remote="android-security" groups="pdk,qcom_msm8x26" />
   <project path="external/v8" name="android_external_v8" remote="android-security" groups="pdk" />
+  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="android-security" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="android-security" groups="pdk-fs" />
+  <project path="packages/providers/TvProvider" name="android_packages_providers_TvProvider" remote="android-security" groups="pdk-fs" />
   <project path="packages/providers/UserDictionaryProvider" name="android_packages_providers_UserDictionaryProvider" remote="android-security" groups="pdk-cw-fs,pdk-fs" />
+  <project path="system/gatekeeper" name="android_system_gatekeeper" remote="android-security" groups="pdk" />
   <project path="system/update_engine" name="android_system_update_engine" remote="android-security" groups="pdk" />
 
   <!-- Remove SlimRoms Repos we like to patch -->
+  <remove-project name="SlimRoms/android_art" />
   <remove-project name="SlimRoms/android_bionic" />
   <remove-project name="SlimRoms/android_build" />
   <remove-project name="SlimRoms/android_external_aac" />
@@ -55,6 +68,7 @@
   <remove-project name="SlimRoms/android_external_libhevc" />
   <remove-project name="SlimRoms/android_external_libmpeg2" />
   <remove-project name="SlimRoms/android_external_libnfc-nci" />
+  <remove-project name="SlimRoms/android_external_libvpx" />
   <remove-project name="SlimRoms/android_external_skia" />
   <remove-project name="SlimRoms/android_external_sonivox" />
   <remove-project name="SlimRoms/android_external_sqlite" />
@@ -69,12 +83,14 @@
   <remove-project name="SlimRoms/packages_apps_Bluetooth" />
   <remove-project name="SlimRoms/packages_apps_Contacts" />
   <remove-project name="SlimRoms/packages_apps_Messaging" />
+  <remove-project name="SlimRoms/packages_apps_Nfc" />
   <remove-project name="SlimRoms/packages_apps_PackageInstaller" />
   <remove-project name="SlimRoms/packages_apps_Settings" />
   <remove-project name="SlimRoms/packages_apps_UnifiedEmail" />
   <remove-project name="SlimRoms/packages_providers_DownloadProvider" />
   <remove-project name="SlimRoms/packages_providers_MediaProvider" />
   <remove-project name="SlimRoms/packages_providers_TelephonyProvider" />
+  <remove-project name="SlimRoms/packages_services_Telecomm" />
   <remove-project name="SlimRoms/packages_services_Telephony" />
   <remove-project name="SlimRoms/android_system_bt" />
   <remove-project name="SlimRoms/android_system_core" />
@@ -88,6 +104,7 @@
   <project path="build" name="android_build" remote="slimromssecurity" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="art" name="android_art" remote="slimromssecurity" />
   <project path="bionic" name="android_bionic" remote="slimromssecurity" />
   <project path="external/aac" name="android_external_aac" remote="slimromssecurity" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="slimromssecurity" />
@@ -96,6 +113,7 @@
   <project path="external/libhevc" name="android_external_libhevc" remote="slimromssecurity" />
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="slimromssecurity" />
   <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="slimromssecurity" />
+  <project path="external/libvpx" name="android_external_libvpx" remote="slimromssecurity" />
   <project path="external/skia" name="android_external_skia" remote="slimromssecurity" />
   <project path="external/sonivox" name="android_external_sonivox" remote="slimromssecurity" />
   <project path="external/sqlite" name="android_external_sqlite" remote="slimromssecurity" />
@@ -110,12 +128,14 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="slimromssecurity" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="slimromssecurity" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="slimromssecurity" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="slimromssecurity" />
   <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="slimromssecurity" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="slimromssecurity" />
   <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="slimromssecurity" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="slimromssecurity" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="slimromssecurity" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="slimromssecurity" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="slimromssecurity" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="slimromssecurity" />
   <project path="system/bt" name="android_system_bt" remote="slimromssecurity" />
   <project path="system/core" name="system_core" remote="slimromssecurity" />
