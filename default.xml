@@ -21,6 +21,7 @@
   <remove-project name="platform/external/curl" />
   <remove-project name="platform/external/ImageMagick" />
   <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/libexif" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/libxml2" />
@@ -45,6 +46,7 @@
   <project path="external/curl" name="android_external_curl" remote="android-security" groups="pdk" />
   <project path="external/ImageMagick" name="android_external_ImageMagick" remote="android-security" groups="pdk" />
   <project path="external/libcxx" name="android_external_libcxx" remote="android-security" groups="pdk" />
+  <project path="external/libexif" name="android_external_libexif" remote="android-security" groups="pdk" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="android-security" groups="pdk" />
   <project path="external/libpng" name="android_external_libpng" remote="android-security" groups="pdk" />
   <project path="external/libxml2" name="android_external_libxml2" remote="android-security" groups="pdk,libxml2" />
